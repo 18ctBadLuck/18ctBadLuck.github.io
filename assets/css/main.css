@@ -1838,7 +1838,6 @@ input, select, textarea {
 		line-height: 3em;
 		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
 	}
-
 		#header h1 {
 			position: absolute;
 			left: 1em;
@@ -1876,7 +1875,10 @@ input, select, textarea {
 						padding: 0 1.7em 0 1.7em;
 						outline: 0;
 					}
-
+#header nav li:hover {
+	background-color: rgb(224, 224, 224);
+	transition: background-color 1s, transform 1s;
+}
 		@media screen and (max-width: 736px) {
 
 			#header {
