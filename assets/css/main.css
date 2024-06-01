@@ -1837,6 +1837,7 @@ input, select, textarea {
 		height: 3em;
 		line-height: 3em;
 		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+		transition: top 0.5s;
 	}
 		#header h1 {
 			position: absolute;
@@ -1957,7 +1958,7 @@ input, select, textarea {
 		}
 
 			.main.style1 h2 {
-				font-size: 5em;
+				font-size: 4.5em;
 				line-height: 1em;
 			}
 
@@ -1995,7 +1996,7 @@ input, select, textarea {
 				-moz-transition: -moz-transform 1s ease;
 				-webkit-transition: -webkit-transform 1s ease;
 				-ms-transition: -ms-transform 1s ease;
-				transition: transform 1s ease;
+				transition: transform 0.75s cubic-bezier(0.16, 0.22, 0.06, 0.96);
 				-moz-transform: translateZ(0);
 				-webkit-transform: translateZ(0);
 				-ms-transform: translateZ(0);

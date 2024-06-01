@@ -11,6 +11,30 @@
 		$header = $('#header'),
 		$all = $body.add($header);
 
+	// invisible scroll
+	let lastScrollTop = 0;
+	const header = document.getElementById('header');
+	window.addEventListener('scroll', function() {
+		let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+	
+		if (scrollTop > lastScrollTop) {
+			// Scrolling down
+			if (scrollTop > 100) { // You can adjust this value as needed
+				header.style.top = '-70px'; // Adjust to the height of your header
+			}
+		} else {
+			// Scrolling up
+			header.style.top = '0';
+		}
+	
+		// Always show the header when at the top of the page
+		if (scrollTop === 0) {
+			header.style.top = '0';
+		}
+	
+		lastScrollTop = scrollTop;
+	});
+	
 	// Breakpoints.
 		breakpoints({
 			xxlarge: [ '1681px',  '1920px' ],
@@ -140,7 +164,7 @@
 					$('.main.style2')
 						.scrollex({
 							mode:		'middle',
-							delay:		100,
+							delay:		20,
 							initialize:	function() { $(this).addClass('inactive'); },
 							terminate:	function() { $(this).removeClass('inactive'); },
 							enter:		function() { $(this).removeClass('inactive'); },
@@ -179,7 +203,7 @@
 
 			};
 
-			breakpoints.on('<=small', off);
+			breakpoints.on('<=small', on);
 			breakpoints.on('>small', on);
 
 		}
