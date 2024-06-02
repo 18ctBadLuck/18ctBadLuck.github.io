@@ -616,7 +616,7 @@ input, select, textarea {
 	}
 
 	p, ul, ol, dl, table {
-		margin-bottom: 1em;
+		margin-bottom: 0em;
 	}
 
 /* Box */
@@ -1865,6 +1865,7 @@ input, select, textarea {
 					display: inline-block;
 					margin-left: 0.5em;
 					font-size: 1em;
+					
 				}
 
 					#header nav ul li a {
@@ -1873,12 +1874,14 @@ input, select, textarea {
 						text-decoration: none;
 						height: 3em;
 						line-height: 3em;
-						padding: 0 1.7em 0 1.7em;
+						padding: 0 1.7em;
 						outline: 0;
 					}
-#header nav li:hover {
+#header nav ul li a:hover {
 	background-color: rgb(224, 224, 224);
 	transition: background-color 1s, transform 1s;
+	height: 3em;
+
 }
 		@media screen and (max-width: 736px) {
 
@@ -1954,11 +1957,11 @@ input, select, textarea {
 			-ms-justify-content: center;
 			justify-content: center;
 			text-align: center;
-			padding: 3em 0 3em 0;
+			padding: 0em 0 11em 0;
 		}
 
 			.main.style1 h2 {
-				font-size: 4.5em;
+				font-size: 3.5em;
 				line-height: 1em;
 			}
 
