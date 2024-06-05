@@ -20,7 +20,7 @@
 		if (scrollTop > lastScrollTop) {
 			// Scrolling down
 			if (scrollTop > 100) { // You can adjust this value as needed
-				header.style.top = '-70px'; // Adjust to the height of your header
+				header.style.top = '-100px'; // Adjust to the height of your header
 			}
 		} else {
 			// Scrolling up

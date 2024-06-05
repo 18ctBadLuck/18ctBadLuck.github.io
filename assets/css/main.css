@@ -1888,10 +1888,11 @@ input, select, textarea {
 
 }
 		@media screen and (max-width: 736px) {
-
+			
 			#header {
-				height: 2.5em;
-				line-height: 2.5em;
+				font-size: 11pt;
+				height: 6em;
+				line-height: 6em;
 			}
 
 				#header h1 {
@@ -1908,7 +1909,7 @@ input, select, textarea {
 					}
 
 				#header nav {
-					display: none;
+					display: flex;
 				}
 
 		}
@@ -2111,7 +2112,12 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-
+			#one {
+				background-position: top left, calc(50% + 200px) center !important;
+			}
+			p {
+				font-size: 20px !important; /* Изменение размера шрифта */
+			}
 			.main > .content br {
 				display: none;
 			}
@@ -2121,7 +2127,7 @@ input, select, textarea {
 			}
 
 			.main.style1 {
-				padding: 4em 15px 4em 15px;
+				padding: 0em 15px 14em 15px;
 			}
 
 				.main.style1 h2 {
