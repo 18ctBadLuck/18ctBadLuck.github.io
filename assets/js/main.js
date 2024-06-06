@@ -11,6 +11,15 @@
 		$header = $('#header'),
 		$all = $body.add($header);
 
+
+	// button hide
+	$(document).ready(function() {
+		// Обработчик события клика на кнопке
+		$('#toggle-image').click(function() {
+			$('.main.style2').toggleClass('inactive');
+		});
+	});
+	
 	// invisible scroll
 	let lastScrollTop = 0;
 	const header = document.getElementById('header');
@@ -134,6 +143,7 @@
 		});
 
 	// Section transitions.
+
 		if (browser.canUse('transition')) {
 
 			var on = function() {

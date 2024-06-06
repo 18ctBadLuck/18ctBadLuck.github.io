@@ -33,9 +33,28 @@ body {
 	line-height: 1;
 }
 
+.button-container {
+	opacity: 75%;
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#toggle-image {
+	position: absolute;
+    top: 91%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px; /* Ширина изображения */
+    height: auto; /* Автоматическая высота для поддержки пропорций */
+    cursor: pointer; /* Указатель мыши при наведении */
+}
+
 ol, ul {
 	list-style: none;
 }
+
 
 blockquote, q {
 	quotes: none;
@@ -646,7 +665,7 @@ input, select, textarea {
 			}
 
 				.box.style2 {
-					padding: 1.5em 1.25em 1.5em 1.25em;
+					padding: 1em 1.25em 1em 1.25em;
 					background-color: rgba(255, 255, 255, 0.9);
 				}
 
@@ -2119,7 +2138,7 @@ input, select, textarea {
 				background-position: top left, calc(50% + 200px) center !important;
 			}
 			p {
-				font-size: 20px !important; /* Изменение размера шрифта */
+				font-size: 17px !important; /* Изменение размера шрифта */
 			}
 			.main > .content br {
 				display: none;
@@ -2138,7 +2157,7 @@ input, select, textarea {
 				}
 
 			.main.style2 {
-				padding: 6em 15px 6em 15px;
+				padding: 6em 0px 6em 0px;
 			}
 
 				.main.style2:before, .main.style2:after {
@@ -2164,6 +2183,13 @@ input, select, textarea {
 				padding: 3em 10px 3em 10px;
 			}
 
+		}
+
+		@media only screen and (min-width: 600px) {
+			/* Скрыть кнопку-изображение на десктопных устройствах */
+			.mobile-only {
+				display: none;
+			}
 		}
 
 		@media screen and (max-width: 480px) {
