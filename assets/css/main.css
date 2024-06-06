@@ -2112,6 +2112,9 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
+			#intro {
+				background-position: top left, center calc(50% + 100px) !important;
+			}
 			#one {
 				background-position: top left, calc(50% + 200px) center !important;
 			}
@@ -2127,7 +2130,7 @@ input, select, textarea {
 			}
 
 			.main.style1 {
-				padding: 0em 15px 14em 15px;
+				padding: 4.5em 15px 7.5em 15px;
 			}
 
 				.main.style1 h2 {
