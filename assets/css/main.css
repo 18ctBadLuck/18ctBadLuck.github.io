@@ -34,11 +34,16 @@ body {
 }
 
 .button-container {
-	opacity: 75%;
+	opacity: 90%;
     position: absolute;
     top: 87%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* Состояние кнопки при нажатии */
+#toggle-image.clicked {
+    opacity: 0.5; /* Полностью непрозрачное состояние при нажатии */
 }
 
 #toggle-image {
@@ -1990,10 +1995,10 @@ input, select, textarea {
 			}
 
 			.main.style1 > .content {
-				-moz-transition: opacity 1s ease;
-				-webkit-transition: opacity 1s ease;
-				-ms-transition: opacity 1s ease;
-				transition: opacity 1s ease;
+				-moz-transition: opacity 1.5s ease;
+				-webkit-transition: opacity 1.5s ease;
+				-ms-transition: opacity 1.5s ease;
+				transition: opacity 1.5s ease;
 				-moz-transform: translateZ(0);
 				-webkit-transform: translateZ(0);
 				-ms-transform: translateZ(0);
@@ -2169,6 +2174,10 @@ input, select, textarea {
 				}
 
 				.main.style2 .content {
+					-moz-transition: -moz-transform 1.3s ease;
+				-webkit-transition: -webkit-transform 1.3s ease;
+				-ms-transition: -ms-transform 1.3s ease;
+				transition: transform 1.3s ease;
 					width: 100%;
 					max-width: 100%;
 					text-align: center;

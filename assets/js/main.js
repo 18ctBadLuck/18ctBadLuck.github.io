@@ -19,6 +19,13 @@
 			$('.main.style2').toggleClass('inactive');
 		});
 	});
+
+	$(document).ready(function() {
+		// Обработчик события клика на изображение-кнопку
+		$('#toggle-image').click(function() {
+			$(this).toggleClass('clicked');
+		});
+	});
 	
 	// invisible scroll
 	let lastScrollTop = 0;
