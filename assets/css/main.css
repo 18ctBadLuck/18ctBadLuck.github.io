@@ -2250,6 +2250,10 @@ input, select, textarea {
     padding: 0px;
   }
 
+  .slider-line {
+	width: 0.01rem;
+  }
+  
   svg {
     width: 17px; /* Новая ширина для мобильных устройств */
     height: 17px; /* Новая высота для мобильных устройств */
