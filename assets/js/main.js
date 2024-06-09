@@ -20,6 +20,30 @@
 		});
 	});
 
+	
+	// Функция для увеличения или уменьшения изображения
+	$(document).ready(function() {
+		$(".thumbnail").click(function() {
+			toggleImageSize(this);
+		});
+	});
+	
+	// Функция для увеличения или уменьшения изображения
+	function toggleImageSize(img) {
+		img.classList.toggle('enlarged');
+	}
+
+	$(document).ready(function() {
+		// Код, который будет выполнен после полной загрузки HTML документа
+		// Здесь можно выполнять манипуляции с DOM элементами, подключать обработчики событий и т.д.
+		
+		// Находим элемент слайдера и добавляем обработчик события input
+		$('.slider').on('input', function(e) {
+			const container = document.querySelector('.container');
+			container.style.setProperty('--position', `${e.target.value}%`);
+		});
+	});
+	
 	$(document).ready(function() {
 		// Обработчик события клика на изображение-кнопку
 		$('#toggle-image').click(function() {
