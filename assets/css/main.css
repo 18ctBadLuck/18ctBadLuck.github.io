@@ -33,6 +33,9 @@ body {
 	line-height: 1;
 }
 
+svg {
+	opacity: 80%;
+}
 .button-container {
 	opacity: 90%;
     position: absolute;
@@ -109,7 +112,7 @@ main {
 .slider-line {
   position: absolute;
   inset: 0;
-  width: .2rem;
+  width: .1rem;
   height: 100%;
   background-color: #fff;
   /* z-index: 10; */
@@ -120,9 +123,8 @@ main {
 
 .slider-button {
   position: absolute;
-  background-color: #fff;
-  color: black;
-  padding: .5rem;
+  color: rgb(255, 255, 255);
+  padding: .3rem;
   border-radius: 100vw;
   display: grid;
   place-items: center;
@@ -131,7 +133,6 @@ main {
   transform: translate(-50%, -50%);
   pointer-events: none;
   /* z-index: 100; */
-  box-shadow: 1px 1px 1px hsl(0, 50%, 2%, .5);
 }
 
 /* Стили для миниатюр */
@@ -2242,6 +2243,18 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
+			*,
+  *::after,
+  *::before {
+    margin: -6px;
+    padding: 0px;
+  }
+
+  svg {
+    width: 17px; /* Новая ширина для мобильных устройств */
+    height: 17px; /* Новая высота для мобильных устройств */
+  }
+
 			#intro {
 				background-position: top left, center calc(50% + 100px) !important;
 			}
@@ -2295,7 +2308,7 @@ input, select, textarea {
 
 			.main.style3 {
 				text-align: center;
-				padding: 3em 10px 3em 10px;
+				padding: 3em 0px 3em 0px;
 			}
 
 		}
