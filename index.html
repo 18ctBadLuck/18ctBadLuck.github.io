@@ -34,7 +34,7 @@
 						<h2>Привет</h2>
 					</header>
 					<p style="Font-Family: Helvetica;font-size: 25px;">Меня зовут Богдан. 
-						Я уже почти 10 лет занимаюсь ретушированием.
+						Я занимаюсь ретушированием почти 10 лет.
 					<p style="Font-Family: Helvetica;font-size: 25px;">Изначально это было для меня скорее как хобби: 
 						самостоятельное изучение программы Photoshop для редактирования фотографий себя и мира вокруг. 
 						Но со временем я решил профессионально развиваться в этом направлении.</p></a></p>
@@ -93,7 +93,7 @@
 					<!-- <img src="images/compare/compare1full.jpg" alt="Миниатюра1" class="thumbnail" onclick="toggleImageSize(this)">
 					<img src="images/thumbnail2.jpg" alt="Миниатюра 2" class="thumbnail" onclick="toggleImageSize(this)"> -->
 					
-					<div class="container">
+					<div class="container" id="container1">
         <div class="image-container">
           <img
             class="image-before slider-image"
@@ -104,7 +104,7 @@
             src="images/compare/after.jpg"
           />
         </div>
-		
+
         <!-- step="10" -->
         <input
           type="range"
@@ -113,6 +113,7 @@
           value="50"
           aria-label="Percentage of before photo shown"
           class="slider"
+		  id="slider1"
         />
         <div class="slider-line" aria-hidden="true"></div>
         <div class="slider-button" aria-hidden="true">
@@ -136,10 +137,7 @@
               stroke-width="30"
             ></line> -->
             <line
-              x1="96"
-              y1="128"
-              x2="16"
-              y2="128"
+              x1="96" y1="128" x2="16" y2="128"
               fill="none"
               stroke="currentColor"
               stroke-linecap="round"
@@ -155,10 +153,7 @@
               stroke-width="16"
             ></polyline>
             <line
-              x1="160"
-              y1="128"
-              x2="240"
-              y2="128"
+              x1="160" y1="128" x2="240" y2="128"
               fill="none"
               stroke="currentColor"
               stroke-linecap="round"
@@ -177,6 +172,73 @@
         </div>
       </div>
 
+	  <p><div class="container" id="container2"> 
+        <div class="image-container">
+          <img
+            class="image-before slider-image"
+           src="images/compare/gagaBefore.jpg"
+          />
+          <img
+            class="image-after slider-image"
+            src="images/compare/gagaAfter.jpg"
+          />
+        </div></p>
+
+		<!-- step="10" -->
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          aria-label="Percentage of before photo shown"
+          class="slider"
+		  id="slider2"
+        />
+        <div class="slider-line" aria-hidden="true"></div>
+        <div class="slider-button" aria-hidden="true">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            viewBox="0 0 256 256"
+          >
+            <rect width="256" height="256" fill="none"></rect>
+            <line
+              x1="96" y1="128" x2="16" y2="128"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></line>
+            <polyline
+              points="48 160 16 128 48 96"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></polyline>
+            <line
+              x1="160" y1="128" x2="240" y2="128"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></line>
+            <polyline
+              points="208 96 240 128 208 160"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></polyline>
+          </svg>
+        </div>
+      </div>
 
 					<!-- Gallery  -->
 						<div class="gallery">

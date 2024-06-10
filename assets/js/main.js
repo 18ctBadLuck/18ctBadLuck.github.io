@@ -33,16 +33,17 @@
 		img.classList.toggle('enlarged');
 	}
 
-	$(document).ready(function() {
-		// Код, который будет выполнен после полной загрузки HTML документа
-		// Здесь можно выполнять манипуляции с DOM элементами, подключать обработчики событий и т.д.
-		
-		// Находим элемент слайдера и добавляем обработчик события input
-		$('.slider').on('input', function(e) {
-			const container = document.querySelector('.container');
-			container.style.setProperty('--position', `${e.target.value}%`);
-		});
-	});
+	// Обработчик для первого слайдера и контейнера
+const container1 = document.querySelector('#container1');
+document.querySelector('#slider1').addEventListener('input', (e) => {
+  container1.style.setProperty('--position', `${e.target.value}%`);
+});
+
+// Обработчик для второго слайдера и контейнера
+const container2 = document.querySelector('#container2');
+document.querySelector('#slider2').addEventListener('input', (e) => {
+  container2.style.setProperty('--position', `${e.target.value}%`);
+});
 	
 	$(document).ready(function() {
 		// Обработчик события клика на изображение-кнопку

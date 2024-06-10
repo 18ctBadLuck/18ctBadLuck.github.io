@@ -77,8 +77,8 @@ main {
 }
 
 .image-container {
-  max-width: 2000px;
-  max-height: 200vh;
+  max-width: 2500px;
+  max-height: 2000px;
 }
 
 .slider-image {
@@ -2070,7 +2070,7 @@ input, select, textarea {
 	}
 
 		.main > .content {
-			width: 50em;
+			width: 45em;
 			max-width: calc(100% - 2em);
 			margin: 0 auto;
 		}
