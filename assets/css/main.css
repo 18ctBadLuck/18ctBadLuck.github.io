@@ -72,13 +72,14 @@ main {
   place-content: center;
   position: relative;
   overflow: hidden;
-  border-radius: 1rem;
+  border-radius: 0px;
   --position: 50%;
+  margin-bottom: 2em;
 }
 
 .image-container {
-  max-width: 2500px;
-  max-height: 2000px;
+  max-width: 3000px;
+  max-height: 3000px;
 }
 
 .slider-image {
@@ -135,13 +136,15 @@ main {
   /* z-index: 100; */
 }
 
-/* Стили для миниатюр */
-.thumbnail {
-    width: 400px; /* Ширина миниатюры */
-    height: auto; /* Автоматическое сохранение пропорций */
-    cursor: pointer; /* Курсор указывает, что элемент кликабельный */
-    transition: all 0.6s ease; /* Плавное увеличение */
-}
+/* Стили для миниатюр 
+  .thumbnail {
+    width: 200px; /* Ширина миниатюры 
+    height: auto; /* Автоматическое сохранение пропорций 
+    cursor: pointer; /* Курсор указывает, что элемент кликабельный 
+    transition: all 0.6s ease; /* Плавное увеличение 
+	margin: auto;
+	display: block;
+} */
 
 /* Класс для увеличенного изображения */
 .enlarged {
@@ -724,7 +727,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out;
-		color: #98c593;
+		color: #1e1e1e;
 	}
 
 	sub {
@@ -1307,9 +1310,9 @@ input, select, textarea {
 
 		ul.icons a {
 			display: inline-block;
-			width: 2em;
-			height: 2em;
-			line-height: 2em;
+			width: 3em;
+			height: 1em;
+			line-height: 0em;
 			text-align: center;
 			border: 0;
 		}
@@ -2179,7 +2182,7 @@ input, select, textarea {
 		}
 
 			.main.style3 .content > header {
-				margin-bottom: 2em;
+				margin-bottom: 1em;
 			}
 
 			.main.style3.primary {
@@ -2322,7 +2325,7 @@ input, select, textarea {
 				display: none;
 			}
 			.main.style3 {
-				padding: 3em 0 4em 0; /* Пример нового значения padding для десктопной версии */
+				padding: 2em 0 4em 0; /* Пример нового значения padding для десктопной версии */
 			}
 		}
 
@@ -2348,13 +2351,13 @@ input, select, textarea {
 		-moz-justify-content: space-between;
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
-		justify-content: space-between;
+		justify-content: center;
 		position: relative;
 		margin: 0;
 		line-height: 1em;
 		padding: 1.5em;
-		background: #39454b;
-		color: rgba(185, 186, 187, 0.5);
+		background: #ffffff;
+		color: rgba(0, 0, 0, 0.5);
 		overflow: hidden;
 	}
 
@@ -2376,7 +2379,9 @@ input, select, textarea {
 
 			#footer ul.menu li {
 				border-left-color: rgba(185, 186, 187, 0.2);
-				font-size: 0.9em;
+				font-size: 1.4em;
+				font-family: Helvetica, sans-serif;
+				
 			}
 
 		@media screen and (max-width: 1000px) {
@@ -2392,7 +2397,7 @@ input, select, textarea {
 				justify-content: center;
 				line-height: 1.5em;
 				text-align: center;
-				padding: 2em 1em 2em 1em;
+				padding: 1em 1em 1em 1em;
 			}
 
 				#footer > * {

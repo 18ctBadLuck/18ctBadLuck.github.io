@@ -33,6 +33,7 @@
 		img.classList.toggle('enlarged');
 	}
 
+	
 	// Обработчик для первого слайдера и контейнера
 const container1 = document.querySelector('#container1');
 document.querySelector('#slider1').addEventListener('input', (e) => {
