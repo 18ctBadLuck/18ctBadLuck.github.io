@@ -46,6 +46,12 @@ document.querySelector('#slider2').addEventListener('input', (e) => {
   container2.style.setProperty('--position', `${e.target.value}%`);
 });
 	
+// Обработчик для третьего слайдера и контейнера
+const container3 = document.querySelector('#container3');
+document.querySelector('#slider3').addEventListener('input', (e) => {
+  container3.style.setProperty('--position', `${e.target.value}%`);
+});
+
 	$(document).ready(function() {
 		// Обработчик события клика на изображение-кнопку
 		$('#toggle-image').click(function() {

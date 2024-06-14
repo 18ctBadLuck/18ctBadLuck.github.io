@@ -33,6 +33,18 @@ body {
 	line-height: 1;
 }
 
+.language-switch {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	display: flex;
+}
+.language-switch img {
+	width: 40px;
+	margin: -3px 15px 20px 4px;
+	cursor: pointer;
+}
+
 svg {
 	opacity: 80%;
 }
@@ -78,8 +90,8 @@ main {
 }
 
 .image-container {
-  max-width: 3000px;
-  max-height: 3000px;
+  max-width: 10000px;
+  max-height: 10000px;
 }
 
 .slider-image {
