@@ -32,7 +32,10 @@
 	function toggleImageSize(img) {
 		img.classList.toggle('enlarged');
 	}
-
+ // Запретить контекстное меню на всем сайте
+ document.addEventListener('contextmenu', function(event) {
+	event.preventDefault();
+});
 	
 	// Обработчик для первого слайдера и контейнера
 const container1 = document.querySelector('#container1');

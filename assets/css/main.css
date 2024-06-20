@@ -148,6 +148,28 @@ main {
   /* z-index: 100; */
 }
 
+video {
+	width: 100%;
+	height: auto;
+}
+.video-container {
+    width: 100%;
+    padding: 1px;
+    box-sizing: border-box;
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	height: 35em;
+	background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .video-container {
+		height: auto;
+		width: 100%; /* Устанавливаем ширину видео на 100% экрана для мобильных устройств */
+    }
+}
+
 /* Стили для миниатюр 
   .thumbnail {
     width: 200px; /* Ширина миниатюры 
