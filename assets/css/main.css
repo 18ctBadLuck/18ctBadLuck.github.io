@@ -1364,7 +1364,7 @@ input, select, textarea {
 		}
 
 	footer {
-		margin-top: 2em;
+		margin-top: 0em;
 	}
 
 /* Table */
@@ -2107,8 +2107,8 @@ input, select, textarea {
 	}
 
 		.main > .content {
-			width: 45em;
-			max-width: calc(100% - 2em);
+			width: 59em;
+			max-width: calc(100%-2em);
 			margin: 0 auto;
 		}
 
@@ -2359,7 +2359,7 @@ input, select, textarea {
 				display: none;
 			}
 			.main.style3 {
-				padding: 2em 0 4em 0; /* Пример нового значения padding для десктопной версии */
+				padding: 3em 0 4em 0; /* Пример нового значения padding для десктопной версии */
 			}
 		}
 
@@ -2393,7 +2393,7 @@ input, select, textarea {
 		-ms-justify-content: space-between;
 		justify-content: center;
 		position: relative;
-		margin: 0;
+		margin-block-end: auto;
 		line-height: 1em;
 		padding: 1.5em;
 		background: #ffffff;
@@ -2495,7 +2495,8 @@ input, select, textarea {
 
 	#contact {
 		overflow: hidden;
-		padding-bottom: 0;
+		padding-bottom: 5em;
+		padding-top: 5em;
 	}
 
 		#contact .box {
