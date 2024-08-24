@@ -86,7 +86,7 @@ main {
   overflow: hidden;
   border-radius: 0px;
   --position: 50%;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 
 .image-container {
@@ -1621,6 +1621,7 @@ input, select, textarea {
 			.gallery article .image {
 				margin: 0;
 				display: block;
+				margin-bottom: 4em;
 			}
 
 			.gallery article:nth-last-child(1n) {
